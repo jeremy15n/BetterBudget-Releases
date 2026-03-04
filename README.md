@@ -76,7 +76,7 @@ Built for modern users who value privacy, reliability, and sophisticated financi
 
 **System Requirements:**
 - Windows 7 SP1 or later
-- 100 MB disk space
+- 400 MB disk space
 - Valid license key required (purchase at [betterbudget.com](https://betterbudget.com))
 
 **Download Options:**
