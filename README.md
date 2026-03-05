@@ -79,9 +79,8 @@ Built for modern users who value privacy, reliability, and sophisticated financi
 - 400 MB disk space
 - Valid license key required (purchase at [betterbudget.com](https://betterbudget.com))
 
-**Download Options:**
+**Download**
 1. **Installer** — `BetterBudget Setup X.Y.Z.exe` — Installs to Program Files with auto-update support
-2. **Portable** — `BetterBudget-Portable-X.Y.Z.exe` — No installation required; run from any directory (no auto-update)
 
 Get the latest release from [BetterBudget Releases](https://github.com/jeremy15n/BetterBudget-Releases/releases).
 
@@ -92,12 +91,3 @@ Get the latest release from [BetterBudget Releases](https://github.com/jeremy15n
 For contributors and developers:
 
 **Prerequisites:** Node.js 18+
-
-```bash
-git clone https://github.com/jeremy15n/BetterBudget.git
-cd BetterBudget
-
-npm install
-cd backend && npm install && cd ..
-
-npm run dev
