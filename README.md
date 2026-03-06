@@ -36,39 +36,36 @@ Built for modern users who value privacy, reliability, and sophisticated financi
 
 ---
 
-## Core Features
-
 ### Financial Tracking & Visibility
-- **Dashboard** — Real-time financial overview with income, expenses, savings rate, net worth tracking, cash flow analysis, and spending category breakdowns
-- **Accounts** — Multi-asset account management for checking, savings, credit cards, brokerage, and retirement accounts with full asset/liability categorization
-- **Transactions** — Comprehensive transaction ledger with advanced search, multi-criterion filtering, bulk operations, and inline editing
-- **Net Worth** — Live net worth calculations with historical snapshot tracking, what-if scenario modeling, and retirement planning projections
+- 📊 **Dashboard** — Income, expenses, savings rate, net worth, cash flow charts, spending breakdowns, recurring cost detection, and recent transactions with date range filters
+- 💳 **Transactions** — Paginated list with search, category/type/account/status filters, bulk edit, bulk delete, flag for review, and inline editing
+- 🏦 **Accounts** — Checking, savings, credit cards, brokerage, and retirement with asset/liability tracking and custom icons
+- 💎 **Net Worth** — Live calculation from accounts, historical snapshots, auto-sync, and what-if projections with retirement planning (401k, IRA, employer match, FIRE number)
 
 ### Budgeting & Planning
-- **Budget Management** — Flexible monthly and pay-period budgeting with category limits, rollover carry-forward, and budget-based spending projections
-- **Goals** — Financial target tracking with real-time progress visualization
-- **Investment Tracking** — Portfolio monitoring with live market data integration (Yahoo Finance)
+- 💰 **Budget Management** — Monthly and pay-period views with category limits, rollover support, and budget-aware projections
+- 🎯 **Goals** — Financial targets with progress tracking
+- 📈 **Investment Tracking** — Portfolio tracking with live price refresh (Yahoo Finance)
 - **Recurring Cost Planning** — Automatic recurring expense detection and management
 - **Retirement Projector** — Advanced what-if analysis with 401(k), IRA, employer matching, salary growth, and FIRE number calculations
 
 ### Intelligent Automation
-- **Smart Categorization** — Rule-based categorization engine (exact match, partial match, pattern-based) with IF/THEN conditional logic
+- 🪄 **Smart Categorization** — Rule engine (exact, contains, starts-with, IF/THEN conditions) with category aliases and ML auto-categorization that learns from your transactions
 - **ML Auto-Categorization** — Machine learning–powered transaction classification that learns from your behavior (Naive Bayes)
-- **Duplicate Detection** — Real-time duplicate flagging during import and historical duplicate scanning
-- **Transfer Reconciliation** — Automatic internal transfer pairing and reconciliation across accounts
+- 🔁 **Duplicate Detection** — Real-time duplicate flagging during import and historical duplicate scanning
+- 🔄 **Transfer Reconciliation** — Internal transfer pairing logic with maintenance reconciliation
 
 ### Data Import & Export
-- **Multi-Format Import** — CSV and Excel import with automatic bank format detection (AMEX, USAA, PayPal, Fidelity, Schwab, and generic formats)
-- **Database Backup** — Full database export and import for disaster recovery and data portability
-- **Bulk Operations** — Batch transaction edits, categorization, and deletion with confirmation safeguards
+- 📥 **Multi-Format Import** — CSV and Excel import with automatic bank format detection (AMEX, USAA, PayPal, Fidelity, Schwab, and generic formats)
+- 💾 **Database Export/Import** — Back up and restore your budget data from Preferences
 
 ### Enterprise Features
-- **Privacy Controls** — One-click privacy blur to hide/show monetary amounts; colorblind accessibility modes (protanopia, deuteranopia, tritanopia)
-- **Offline Licensing** — RSA-4096 encrypted license validation with zero external dependencies; works completely offline after activation
-- **Auto-Update System** — Built-in update checking and installation for the desktop app (installer version)
-- **Recycle Bin** — Soft-delete protection with restore and permanent purge capabilities for transactions and records
-- **Dark Mode** — System-aware dark theme with professional UI and custom floating scrollbars
-- **Customization** — Fully configurable categories with colors, sorting, aliases, and landing page preferences
+- 👁️ **Privacy Controls** — One-click privacy blur to hide/show monetary amounts; colorblind accessibility modes (protanopia, deuteranopia, tritanopia)
+- 🔐 **Offline Licensing** — RSA-4096 encrypted license validation with zero external dependencies; works completely offline after activation
+- 🔄 **Auto-Update System** — Built-in update checking and installation for the desktop app (installer version)
+- 🌙 **Dark Mode** — System-aware dark theme with professional UI and custom floating scrollbars
+- ⚙️ **Configurations** — Fully configurable categories with colors, sorting, aliases, and landing page preferences
+- 🏷️ **Categories** — Fully customizable spending categories with colors and aliases
 
 ---
 
@@ -95,12 +92,4 @@ Built for modern users who value privacy, reliability, and sophisticated financi
 **Download**
 1. **Installer** — `BetterBudget Setup X.Y.Z.exe` — Installs to Program Files with auto-update support
 
-Get the latest release from [BetterBudget Releases](https://github.com/jeremy15n/BetterBudget-Releases/releases).
-
----
-
-## Development
-
-For contributors and developers:
-
-**Prerequisites:** Node.js 18+
+Get the latest release from [BetterBudget Releases](https://github.com/jeremy15n/BetterBudget/releases).
