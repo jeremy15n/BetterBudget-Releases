@@ -12,7 +12,7 @@
 
   ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
   ![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)
-  ![Status](https://img.shields.io/badge/status-production-brightgreen.svg)
+  ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
   ![License](https://img.shields.io/badge/license-proprietary-red.svg)
 </div>
 
