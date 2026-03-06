@@ -10,12 +10,10 @@
     Your financial data stays on your machine in a single encrypted file.
   </p>
 
-  <p>
   ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
   ![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)
   ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
   ![License](https://img.shields.io/badge/license-proprietary-red.svg)
-  </p>
   
   <p>
     <a href="docs/ui.md"><b>UI</b></a> &nbsp;|&nbsp;
