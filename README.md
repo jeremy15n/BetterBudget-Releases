@@ -1,10 +1,13 @@
 # BetterBudget
 
 <div align="center">
-  <h3>Professional Personal Finance Management — Local, Secure, No Subscriptions</h3>
+  <img src="logo.png" alt="BetterBudget Logo" width="200">
   <p>
-    <strong>Fully offline personal finance platform for complete financial control</strong><br>
-    Desktop application with complete data privacy. No cloud services. No subscriptions. No data sharing.
+    <b>Fully local personal finance app — now available as a desktop app.</b>
+  </p>
+  <p>
+    No cloud. No subscriptions. No data sharing.<br>
+    Your financial data stays on your machine in a single encrypted file.
   </p>
 
   ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
