@@ -69,19 +69,6 @@ Built for modern users who value privacy, reliability, and sophisticated financi
 
 ---
 
-## Technology Stack
-
-| Component | Technology |
-|-----------|-----------|
-| **Frontend** | React 18, Vite, TanStack Query, Tailwind CSS, shadcn/ui, Recharts |
-| **Backend** | Node.js 18+, Express, SQLite (sql.js) |
-| **Desktop** | Electron, electron-builder (NSIS installer + portable), electron-updater |
-| **Analytics** | Natural (Naive Bayes), custom ML pipeline |
-| **Security** | RSA-4096 encryption, JavaScript obfuscation, offline license validation |
-| **Data Import** | PapaParse (CSV), xlsx (Excel), multer (file handling) |
-
----
-
 ## Installation
 
 **System Requirements:**
