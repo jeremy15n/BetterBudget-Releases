@@ -3,7 +3,7 @@
 <div align="center">
   <img src="logo.png" alt="BetterBudget Logo" width="200">
   <p>
-    <b>Fully local personal finance app — now available as a desktop app.</b>
+    <b>Fully local personal finance app - now available as a desktop app.</b>
   </p>
   <p>
     No cloud. No subscriptions. No data sharing.<br>
