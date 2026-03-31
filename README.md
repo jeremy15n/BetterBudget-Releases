@@ -16,11 +16,11 @@
   ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
   
   <p>
-    <a href="docs/ui.md"><b>UI</b></a> &nbsp;|&nbsp;
     <a href="docs/installation.md"><b>Installation</b></a> &nbsp;|&nbsp;
-    <a href="docs/troubleshooting.md"><b>Troubleshooting</b></a> &nbsp;|&nbsp;
-    <a href="docs/api.md"><b>API Documentation</b></a> &nbsp;|&nbsp;
-    <a href="docs/architecture.md"><b>Architecture</b></a> &nbsp;|&nbsp;
+    <a href="docs/LICENSE"><b>License</b></a> &nbsp;|&nbsp;
+    <a href="docs/TERMS_OF_SERVICE.md"><b>Terms of Service</b></a> &nbsp;|&nbsp;
+    <a href="docs/REFUND_POLICY.md"><b>Refund Policy</b></a> &nbsp;|&nbsp;
+    <a href="docs/PRIVACY_POLICY.md"><b>Privacy Policy</b></a> &nbsp;|&nbsp;
     <a href="docs/roadmap.md"><b>Roadmap</b></a>
   </p>
   
