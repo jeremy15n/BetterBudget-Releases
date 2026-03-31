@@ -74,7 +74,7 @@ Built for modern users who value privacy, reliability, and sophisticated financi
 **System Requirements:**
 - Windows 7 SP1 or later
 - 400 MB disk space
-- Valid license key required (purchase at [betterbudget.com](https://betterbudget.com))
+- Valid license key required (purchase at [betterbudget.com](https://betterbudgetapp.com))
 
 **Download**
 1. **Installer** - `BetterBudget Setup X.Y.Z.exe` - Installs to Program Files with auto-update support
