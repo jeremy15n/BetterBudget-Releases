@@ -1,0 +1,5 @@
+# Paths matched here are omitted from GitHub release "Source code" ZIP/tar
+# (git archive). They remain in the repo for normal git clone.
+roadmap.md export-ignore
+.github/** export-ignore
+.gitattributes export-ignore
