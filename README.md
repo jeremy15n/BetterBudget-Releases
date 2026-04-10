@@ -91,6 +91,14 @@ Built for modern users who value privacy, reliability, and sophisticated financi
    - Then click **Run anyway**  
      ![Click Run Anyway](install2.png)
 
+### About SmartScreen and trusting the installer
+
+**Microsoft Defender SmartScreen** often shows this prompt for apps that are legitimate but **not yet widely downloaded** or **not signed with a reputation Microsoft already trusts**. That “unrecognized app” message is **not** the same as Defender finding malware—it is mainly a **reputation and code-signing** check, and it is common for smaller desktop apps.
+
+**How to double-check the `.exe`:** We submit each release installer to **VirusTotal** so you can see third‑party antivirus engine results and the file hash. Open **[VirusTotal scan results](VIRUSTOTAL_RESULTS.md)** (also linked in the header above) and compare the SHA-256 there with your downloaded file if you like.
+
+**Only install from us:** Download installers from **[BetterBudget Releases](https://github.com/jeremy15n/BetterBudget/releases)** on this repo or through the app’s built-in updater after you already have a trusted copy.
+
 3. Proceed to copy and paste your license key that you purchased from [betterbudgetapp.com](https://betterbudgetapp.com)
 
 Get the latest release from [BetterBudget Releases](https://github.com/jeremy15n/BetterBudget/releases) or auto-update via the app in preferences!
