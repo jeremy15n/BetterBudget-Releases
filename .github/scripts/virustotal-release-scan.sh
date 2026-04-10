@@ -9,7 +9,10 @@ set -euo pipefail
 : "${GITHUB_WORKSPACE:?}"
 : "${GITHUB_DEFAULT_BRANCH:?Set GITHUB_DEFAULT_BRANCH (default branch name)}"
 
-VT_MAX_BYTES="${VT_MAX_BYTES:-33554432}"
+# Files ≤ this size use POST /files; larger files use GET /files/upload_url then POST (VT public API).
+VT_DIRECT_MAX_BYTES="${VT_DIRECT_MAX_BYTES:-${VT_MAX_BYTES:-33554432}}"
+# VirusTotal documents ~650 MB max for large upload URLs.
+VT_LARGE_MAX_BYTES="${VT_LARGE_MAX_BYTES:-681574400}"
 VT_REGEX="${VT_REGEX:-\\.(exe|msi)$}"
 VT_POLL_SECS="${VT_POLL_SECS:-15}"
 VT_POLL_ATTEMPTS="${VT_POLL_ATTEMPTS:-40}"
@@ -53,12 +56,30 @@ vt_poll_analysis() {
 
 scan_asset_file() {
   local path=$1 name=$2
-  local sha resp analysis_id ar
+  local sha resp analysis_id ar bytes upload_url
   sha="$(sha256sum "${path}" | awk '{print $1}')"
+  bytes="$(stat -c%s "${path}")"
 
-  resp="$(curl -sS -X POST "https://www.virustotal.com/api/v3/files" \
-    -H "x-apikey: ${VT_API_KEY}" \
-    --form "file=@${path}")"
+  if (( bytes > VT_LARGE_MAX_BYTES )); then
+    report_lines+=("| \`${name}\` | $(numfmt --to=iec "${bytes}") | \`${sha}\` | — | — | — | — | Skipped (>${VT_LARGE_MAX_BYTES} bytes; over VirusTotal large-upload limit) |")
+    return 0
+  fi
+
+  if (( bytes <= VT_DIRECT_MAX_BYTES )); then
+    resp="$(curl -sS -X POST "https://www.virustotal.com/api/v3/files" \
+      -H "x-apikey: ${VT_API_KEY}" \
+      --form "file=@${path}")"
+  else
+    upload_url="$(curl -sS "https://www.virustotal.com/api/v3/files/upload_url" \
+      -H "x-apikey: ${VT_API_KEY}" | jq -r '.data // empty')"
+    if [[ -z "${upload_url}" ]]; then
+      echo "VirusTotal upload_url failed for '${name}'" >&2
+      return 1
+    fi
+    resp="$(curl -sS -X POST "${upload_url}" \
+      -H "x-apikey: ${VT_API_KEY}" \
+      --form "file=@${path}")"
+  fi
 
   analysis_id="$(echo "${resp}" | jq -r '.data.id // empty')"
   if [[ -z "${analysis_id}" ]]; then
@@ -93,11 +114,6 @@ for line in "${ASSET_LINES[@]:-}"; do
   fi
 
   considered=$((considered + 1))
-
-  if (( size > VT_MAX_BYTES )); then
-    report_lines+=("| \`${name}\` | $(numfmt --to=iec "${size}") | — | — | — | — | — | Skipped (>${VT_MAX_BYTES} bytes; use VT large upload or raise limit) |")
-    continue
-  fi
 
   dest="${tmpdir}/${name}"
   curl -fsSL \

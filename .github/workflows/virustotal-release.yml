@@ -28,7 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           VT_RESULTS_FILE: VIRUSTOTAL_RESULTS.md
-          # Public API upload limit is 32 MiB; increase only if your VT plan allows larger uploads.
+          # Direct POST /files is for files ≤ this size (~32 MiB); larger assets use VT /files/upload_url (up to ~650 MiB).
           VT_MAX_BYTES: "33554432"
           # POSIX ERE: which attachment names to submit (installer binaries by default).
           VT_REGEX: '\.(exe|msi)$'
